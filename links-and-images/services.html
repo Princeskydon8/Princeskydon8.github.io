@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./script.js"></script>
     <title>Services</title>
 </head>
 <body>
-    Currently no services are available
+	<style>
+		body {
+			background-color: rgb(94, 55, 55);
+		}
+	</style>
+	<h1>    Currently no services are available</h1>
+	<p>Click the button below to switch the background color randomly:</p>
+	<button id="herewego">Switch Color</button>
+	<script>
+		function randomColorSwitch() {
+			const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
+			const currentColor = document.body.style.backgroundColor;
+			let newColor = currentColor;
+			while (newColor === currentColor) {
+				newColor = colors[Math.floor(Math.random() * colors.length)];
+			}
+			document.body.style.backgroundColor = newColor;
+		}
+		const button = document.getElementById("herewego");
+		button.addEventListener("click", randomColorSwitch);
+	</script>
 </body>
 </html>

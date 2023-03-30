@@ -20,7 +20,7 @@ nav{
   padding-right: 10%;
 }
 .logo{
-  color: whitesmoke;
+  color: rgba(213, 236, 109, 0.836);
   font-size: 28px;
 }
   span{
@@ -32,7 +32,7 @@ nav ul li{
    padding: 10px 20px;
 }
 nav ul li a{
-  color: white;
+  color: rgb(130, 165, 219);
   text-decoration: none;
   font-weight:bold;
 }
