@@ -13,4 +13,25 @@ function randomColorSwitch() {
   
   const button = document.getElementById("herewego"); // Get the button element
   button.addEventListener("click", randomColorSwitch); // Add the randomColorSwitch function as a click event listener to the button
+ 
+  let images = document.querySelectorAll('.slider-container img');
+  let buttons = document.querySelectorAll('.slider-controls button');
+  
+  function setActive(index) {
+    for (let i = 0; i < images.length; i++) {
+      images[i].style.opacity = 0;
+      buttons[i].classList.remove('active');
+    }
+    images[index].style.opacity = 1;
+    buttons[index].classList.add('active');
+  }
+  
+  let index = 0;
+  setInterval(function() {
+    index++;
+    if (index >= images.length) {
+      index = 0;
+    }
+    setActive(index);
+  }, 5000);
   
