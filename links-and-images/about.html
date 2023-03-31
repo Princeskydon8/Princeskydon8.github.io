@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./script.js"></script>
     <link rel="stylesheet" href="./pages.css">
-    <title>Favorite about</title>
+    <title>About</title>
 </head>
     <body>
       <div>
@@ -20,10 +20,43 @@
                  <li><a href="./contacts.html">Contact Us</a></li>
               </ul>
             </div>
-      <button id="herewego">Switch Color</button>
-      <a href="../index.html">Back to Home</a>    
+      <button id="herewego">Switch Color</button>   
       <br> 
-      
+      <h1>List of my favorite foods</h1>
+      <ul>
+         <li>Sea food</li>
+         <li>Mexican food</li>    
+         <li>German food</li>    
+         <li>Sadza and mazondo</li>    
+      </ul>
+      <h2>TO DO LIST</h2>
+      <ol>
+         <li>Get a job</li>    
+         <li>Tame a wild thought</li>    
+         <li>Try a different language</li>    
+         <li>Buy laxatives</li>    
+      </ol>
+      <h3>Places to visit</h3>
+      <ol>
+         <ul>
+           <li>Atlantis</li>
+           <li>Bremen</li>
+           <li>Paris</li>
+           <li>Silicon Valley</li>
+           <li>Helsinki</li>
+           <li>Manchester</li>
+         </ul>
+      </ol>
+      <h4>Favorite anime</h4>
+      <ul>
+         <ol>
+             <li>Jujustu Kaisen</li>
+             <li>Naruto Shippuden</li>
+             <li>Black Clover</li>
+             <li>Jobless Reincarnation</li>
+         </ol>
+      </ul>
+
       <h1>Here is a list of my favorite anime</h1>
        <ol>
          <ul>
@@ -32,7 +65,7 @@
                 <img src="../links-and-images/images/jujutsu.jpg" alt="">
              <li>Naruto Shippuden</li>
               <a href="https://9animetv.to/watch/naruto-shippuden-355">Try this</a>
-               <img src="../links-and-images/images/Naruto vs Sasuke.png" alt="">
+                <img src="../links-and-images/images/Naruto vs Sasuke.png" alt="">
 
              <li>Black Clover</li>
              <a href="https://9animetv.to/watch/black-clover-2404?ep=27377">Press here</a>
@@ -45,6 +78,18 @@
          <p>After watching at least two episodes of any of these send the feedback </p>
           <a href="./contacts.html">Contacts</a>
           <a href="./lists.html">My_lists</a>
+      <div class="slider-container">
+        <img src="../links-and-images/images/blackclover.jpg" class="active" alt="">
+        <img src="../links-and-images/images/jujutsu.jpg" alt="">
+        <img src="../links-and-images/images/jobless.png" alt="">
+        <img src="../links-and-images/images/Naruto vs Sasuke.png" alt="">
+      </div>
+      
+      <div class="slider-controls">
+        <button class="active" onclick="setActive(0)">1</button>
+        <button onclick="setActive(1)">2</button>
+        <button onclick="setActive(2)">3</button>
+        <button onclick="setActive(3)">4</button>
+      </div>
     </body>
-
 </html>
