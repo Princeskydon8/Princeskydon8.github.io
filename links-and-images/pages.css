@@ -4,9 +4,11 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
   }
+
 body{
     background-color: rgb(88, 33, 76);    
 }
+
 nav{
     display: flex;
     align-items: center;
@@ -15,13 +17,16 @@ nav{
     padding-left: 10%;
     padding-right: 10%;
   }
+
   .logo{
     color: rgba(213, 236, 109, 0.836);
     font-size: 28px;
   }
+  
     span{
      color: rgb(45, 179, 45);
     }
+
   nav ul li{
      list-style-type: none;
      display: inline-block;
@@ -36,6 +41,7 @@ nav{
     color: brown;
     transition: 0.3s;
   }
+
   button{
     border: none;
     background: violet;
@@ -53,7 +59,7 @@ nav{
 /* Contact us */
 
 .contact-section{
-    background: url() no-repeat center;
+    background: url(./images/cribset.jpg) no-repeat center;
     background-size: cover;
     padding: 40px 0;
 }
@@ -77,6 +83,7 @@ nav{
     padding: 0 10px;
     overflow: hidden;
 }
+
 .contact-form-text {
     display: block;
     width: 100%;
@@ -116,9 +123,7 @@ textarea.contact-form-text {
 .contact-section {
     padding: 0;
 }
-/* Responsiveness */
-@media only screen and (max-width: 1241px) {
-}
+
 .slider-container {
     position: relative;
     display: flex;
@@ -164,3 +169,94 @@ textarea.contact-form-text {
     background-color: #333;
     color: white;
   }
+  /* Responsiveness */
+  /* Mobile devices */
+@media only screen and (max-width: 480px) {
+  nav {
+    display: block;
+    padding: 20px;
+  }
+  nav ul {
+    margin-top: 20px;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .logo {
+    font-size: 24px;
+    text-align: center;
+  }
+  button {
+    margin: 20px auto;
+    display: block;
+  }
+  .slider-container {
+    height: 30vh;
+  }
+  .slider-container img {
+    height: 30vh;
+    width: 100%;
+  }
+  .contact-form {
+    height: auto;
+  }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .logo {
+    font-size: 24px;
+    text-align: center;
+  }
+  button {
+    margin: 20px auto;
+    display: block;
+  }
+  .slider-container {
+    height: 50vh;
+  }
+  .slider-container img {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+/* Desktop devices */
+@media only screen and (min-width: 769px) {
+  nav {
+    padding: 40px;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .logo {
+    font-size: 28px;
+    text-align: center;
+  }
+  button {
+    margin-right: 20px;
+  }
+  .slider-container {
+    height: 75vh;
+  }
+  .slider-container img {
+    height: 75vh;
+    width: 50%;
+  }
+}
