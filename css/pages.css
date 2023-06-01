@@ -4,9 +4,13 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
   }
-
+h1{
+  color:#cee4f5 ;
+}
 body{
-    background-color: burlywood;    
+    background:url(..//links-and-images/images/coolbed.jpg); 
+    background-size: cover;
+    background-position: center;   
 }
 
 nav{
@@ -19,12 +23,12 @@ nav{
   }
 
   .logo{
-    color: rgba(213, 236, 109, 0.836);
+    color: rgba(229, 230, 229, 0.836);
     font-size: 28px;
   }
   
     span{
-     color: rgb(45, 179, 45);
+     color: rgb(27, 34, 27);
     }
 
   nav ul li{

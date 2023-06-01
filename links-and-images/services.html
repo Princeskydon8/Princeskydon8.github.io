@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./script.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/services.css">
     
     <title>Services</title>
@@ -23,72 +22,41 @@
         </ul>
      </nav>
    </div>
-   <div class="container">
-    <div class="card">
-      <div class="inner-box" id="card">
-         <div class="card-front">
-             <h2>LOGIN</h2>
-            <form>
-              <input type="email" class="input-box" placeholder="Your Email Id" required>
-              <input type="password" class="input-box" placeholder="Password" required>
-              <button type="submit" class="submit-btn">Submit</button>
-              <input type="checkbox"><span>Remember Me</span>
-            </form>
-            <button type="button" class="btn" onclick="openREGISTER()">I'M New Here</button>
-            <a href="">Forgot Password</a>              
-         </div>
-         <div class="card-back">
-             <h2>REGISTER</h2>
-             <form>
-                 <input type="text" class="input-box" placeholder="Your Name" required>
-               <input type="email" class="input-box" placeholder="Your Email Id" required>
-               <input type="password" class="input-box" placeholder="Password" required>
-               <button type="submit" class="submit-btn">Submit</button>
-               <input type="checkbox"><span>Remember Me</span>
-             </form>
-             <button type="button" class="btn" onclick="openLOGIN()">I've an account</button>
-             <a href="">Forgot Password</a> 
-         </div>              
-         </div>
-      </div>   
-    </div>   
 
-    <script>
+   <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>
+        <h3>Frontend Development</h3>
+        <p>I specialize in creating responsive and user-friendly websites using the latest frontend technologies such as HTML, CSS, and JavaScript. I can bring your designs to life and ensure optimal performance across different devices and browsers.</p>
+      </li>
+      <li>
+        <h3>UI/UX Design</h3>
+        <p>I have a strong eye for design and can create visually appealing interfaces that enhance the user experience. I focus on creating intuitive and engaging user interfaces that meet your specific requirements and reflect your brand identity.</p>
+      </li>
+      <li>
+        <h3>Website Optimization</h3>
+        <p>I can optimize your website for improved performance, faster loading times, and better search engine rankings. By optimizing code, images, and implementing best practices, I ensure that your website delivers a smooth and seamless user experience.</p>
+      </li>
+      <li>
+        <h3>Responsive Design</h3>
+        <p>In today's mobile-first world, having a responsive website is crucial. I can create responsive designs that adapt to different screen sizes and devices, ensuring that your website looks and functions flawlessly on desktops, tablets, and mobile phones.</p>
+      </li>
+      <li>
+        <h3>Cross-Browser Compatibility</h3>
+        <p>I make sure that your website is compatible with all major web browsers, including Chrome, Firefox, Safari, and Edge. This ensures that your website reaches a wider audience and provides a consistent experience across different browsers.</p>
+      </li>
+      <li>
+        <h3>Website Maintenance</h3>
+        <p>I offer ongoing website maintenance and support services to keep your website up to date, secure, and running smoothly. From content updates to security patches and bug fixes, I ensure that your website remains in optimal condition.</p>
+      </li>
+    </ul>
+  </section>
 
-      var card = document.getElementById("card");
-
-      function openREGISTER() {
-           card.style.transform = "rotateY(-180deg)";    
-     }
-
-     function openLOGIN() {
-           card.style.transform = "rotateY(0deg)";    
-     }
-
-    </script>
-
-
-	
-	<h1>    Currently no services are available</h1>
-	<p>Click the button below to switch the background color randomly:</p>
-	<button id="herewego">Switch Color</button>
-	
   <footer>
     <p>&copy; 2023 Prince Sithole. All rights reserved.</p>
-    </footer>
+  </footer>
 
-  <script>
-		function randomColorSwitch() {
-			const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
-			const currentColor = document.body.style.backgroundColor;
-			let newColor = currentColor;
-			while (newColor === currentColor) {
-				newColor = colors[Math.floor(Math.random() * colors.length)];
-			}
-			document.body.style.backgroundColor = newColor;
-		}
-		const button = document.getElementById("herewego");
-		button.addEventListener("click", randomColorSwitch);
-	</script>
+
 </body>
 </html>
