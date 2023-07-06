@@ -50,10 +50,10 @@ nav ul li a:hover {
 
 button {
   border: none;
-  background: violet;
+  background: rgb(155, 143, 155);
   padding: 12px 30px;
   border-radius: 30px;
-  color: brown;
+  color: rgb(65, 17, 17);
   font-weight: bold;
   font-size: 15px;
   transition: 0.4s;
